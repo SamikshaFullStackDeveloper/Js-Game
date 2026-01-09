@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guess a Word Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+<!-- External CSS Link -->
+ <link rel="stylesheet" href="../../assets/css/game.css">
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- LEFT -->
+      <div class="left">
+        <div class="line"></div>
+        <h1>Guess a<br />Word Game</h1>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="card">
+        <h2>Guess the word</h2>
+        <div class="divider"></div>
+
+        <div class="word-box" id="wordBox"></div>
+
+        <div class="info-box">
+          <div class="info-row">
+            <span>Hint</span>
+            <strong>JS Library</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Remaining</span>
+            <strong class="guess">04</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Wrong</span>
+            <strong class="wrong" id="wrongLetters">-</strong>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <input type="text" id="letterInput" placeholder="Enter a letter" />
+          <button class="btn">Reset Game</button>
+        </div>
+      </div>
+    </div>
+  </body>
+<script src="../../assets/js/game.js"></script>
+</html>
